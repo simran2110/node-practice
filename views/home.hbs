@@ -1,0 +1,38 @@
+<html> 
+<head>
+<meta charset="UTF-8">
+<title> ABOUT </title>
+</head>
+<body>
+<form action="submit"  onsubmit="validate()">
+Enter 1st value:
+<input type="textbox" name="num1" id="num1">
+Enter 2nd  value:
+<input type="textbox" name="num2" id="num2">
+Select 1 option
+<select id="select" name="select">
+<option> please select </option>
+<option>+ </option>
+<option> -</option>
+<option> / </option>
+<option> * </option>
+</select>
+<input type="submit">
+</form>
+
+<script>
+                 function validate(){
+
+                var a =document.getElementById('num1').value;
+               var b = document.getElementById('num2').value;
+              var select= document.getElementById('select').value;
+            if(num1 == " " || num2==" " || select=="please select"){
+                   alert(" please fill form completely");
+                   return false; //  return false krne pe vo age ni jyga vhi ruk jygaa..
+             }
+
+
+              }
+</script>
+</body>
+</html>
